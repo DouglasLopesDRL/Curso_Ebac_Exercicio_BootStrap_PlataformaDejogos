@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(56, 54, 54);
+}
+#cabecalho{
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-link.active{
+    color: #ffffff;
+}
+.navbar-nav .nav-link.active#PS{
+    background-color: blue;
+}
+.navbar-nav .nav-link.active#XB{
+    background-color: green;
+}   
+.navbar-nav .nav-link.active#NT{
+    background-color: red;
+}
+.navbar-nav .nav-link.active#PC{
+    background-color: purple;
+}
+
+.btn-ps{
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-xbox{
+    background-color: green;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-nintendo{
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-pc{
+    background-color: purple;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+.containerPrincipal{
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+section{
+    padding-top: 26px;
+    background-color: rgb(40, 41, 42);
+    color: #ffffff;
+}
+section#playstation{
+    border-top: 5px solid blue;
+}
+
+section#xbox{
+    border-top: 5px solid green;
+}
+
+section#nintendo{
+    border-top: 5px solid red;
+}
+
+section#pc{
+    border-top: 5px solid purple;
+}
+
+.img-carousel{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.cards{
+    margin-top: 20px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+}
+.card{
+    margin: 5px 5px;
+}
+
+@media screen and (max-width: 992px){
+    .row{
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .row{
+        display: block;
+    }
+}   
